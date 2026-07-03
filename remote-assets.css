@@ -1,0 +1,52 @@
+/* Remote imagery keeps the repository lightweight. Every image has a colour fallback. */
+:root { --brand-logo: url("https://upload.wikimedia.org/wikipedia/commons/7/75/Qatar_Airways_logo.svg"); }
+
+.brand__logo--light, .footer__brand img,
+.brand__logo--dark {
+  background: var(--brand-logo) center / contain no-repeat;
+}
+.brand__logo--light { filter: brightness(0) invert(1); }
+.brand__logo--dark { filter: none; }
+
+.hero {
+  background-color: #134f58;
+  background-image: linear-gradient(90deg, rgba(5,24,32,.72) 0%, rgba(6,33,39,.38) 43%, rgba(6,29,36,.08) 78%),
+    url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=2400&q=86");
+  background-position: center;
+  background-size: cover;
+}
+
+.promo-card > img,
+.package-card > img,
+.network-card > img,
+.newsletter__image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.promo-card:nth-child(1) > img { background-image: url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=82"); }
+.promo-card:nth-child(2) > img { background-image: url("https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=900&q=82"); }
+.promo-card:nth-child(3) > img { background-image: url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=82"); }
+.promo-card:nth-child(4) > img { background-image: url("https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=82"); }
+
+.destination-card--maldives {
+  background-image: linear-gradient(0deg, rgba(10,18,32,.80), rgba(10,18,32,0) 58%),
+    url("https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1400&q=84");
+}
+.destination-card--bali {
+  background-image: linear-gradient(0deg, rgba(10,18,32,.80), rgba(10,18,32,0) 58%),
+    url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=84");
+}
+
+.network-card > img {
+  background-color: #dce4ef;
+  background-image: linear-gradient(rgba(247,249,252,.72), rgba(220,228,239,.70)),
+    url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+  background-size: cover, 94% auto;
+}
+
+.package-card:nth-child(1) > img { background-image: url("https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=900&q=82"); }
+.package-card:nth-child(2) > img { background-image: url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=82"); }
+.package-card:nth-child(3) > img { background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=82"); }
+.package-card:nth-child(4) > img { background-image: url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=900&q=82"); }
+.newsletter__image { background-image: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=82"); }
