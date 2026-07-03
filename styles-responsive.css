@@ -1,0 +1,93 @@
+@media (max-width: 1180px) {
+  .desktop-nav { gap: 22px; }
+  .nav-action--help, .language-button span:last-child { display: none; }
+  .flight-row { grid-template-columns: 100px 125px minmax(220px, 1fr) 112px; }
+  .flight-event { grid-column: 1 / -1; width: max-content; justify-self: end; min-height: 38px; padding: 0 16px; margin-top: -3px; }
+  .promo-grid, .package-grid { grid-template-columns: repeat(4, minmax(270px, 1fr)); overflow-x: auto; padding-bottom: 10px; scroll-snap-type: x mandatory; }
+  .package-card { scroll-snap-align: start; }
+}
+
+@media (max-width: 900px) {
+  :root { --shell: min(100% - 32px, 760px); }
+  .announcement { justify-content: flex-start; padding-left: 16px; padding-right: 55px; font-size: 12px; }
+  .site-header { top: 44px; }
+  .nav-shell { height: 76px; gap: 10px; }
+  .brand { min-width: 165px; }
+  .brand__logo { width: 150px; }
+  .brand__virtual { left: 112px; top: 38px; }
+  .desktop-nav, .nav-action--help, .nav-icon, .language-button, .nav-action--account { display: none; }
+  .nav-actions { margin-left: auto; }
+  .mobile-toggle { display: block; }
+  .site-header.is-sticky .mobile-menu { top: 68px; }
+  .hero { min-height: 640px; background-position: 62% center; }
+  .hero__content { padding-top: 60px; }
+  .hero h1 { font-size: clamp(46px, 11vw, 70px); }
+  .flight-board-wrap { margin-top: -60px; }
+  .board-tabs { grid-template-columns: 1fr 1fr; }
+  .board-tabs__fill { grid-column: 1 / -1; justify-content: center; min-height: 38px; background: #fff; }
+  .board-controls { flex-direction: column; }
+  .board-search { width: 100%; }
+  .flight-row { grid-template-columns: 85px 1fr 105px; gap: 13px; }
+  .flight-code { grid-column: 2; }
+  .flight-route { grid-column: 1 / -1; grid-row: 2; }
+  .flight-meta { grid-column: 3; grid-row: 1; }
+  .flight-event { grid-row: 3; }
+  .section { padding-block: 70px; }
+  .promo-grid { grid-template-columns: repeat(4, minmax(290px, 80vw)); }
+  .destination-heading { align-items: start; flex-direction: column; }
+  .destination-options { width: 100%; }
+  .destination-grid { grid-template-columns: 1fr; }
+  .network-card, .network-card > img { height: 560px; min-height: 560px; }
+  .network-search { top: 24px; }
+  .network-filters { bottom: 48px; }
+  .package-grid { grid-template-columns: repeat(4, minmax(250px, 70vw)); }
+  .newsletter { grid-template-columns: 1fr; }
+  .newsletter__image { min-height: 320px; }
+  .footer__top { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  :root { --shell: calc(100% - 24px); }
+  .announcement__content span:last-child { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .brand__logo { width: 140px; }
+  .brand__virtual { left: 104px; top: 37px; }
+  .hero { min-height: 590px; background-position: 68% center; }
+  .hero__shade { background: linear-gradient(90deg, rgba(0,26,32,.74), rgba(0,26,32,.22)); }
+  .hero__copy { max-width: 360px; }
+  .flight-board-wrap { width: calc(100% - 16px); }
+  .board-tabs { min-height: 66px; }
+  .board-tab { font-size: 15px; }
+  .board-controls { padding: 20px 16px 10px; }
+  .filter-chips { flex-wrap: nowrap; overflow-x: auto; }
+  .filter-chip { white-space: nowrap; }
+  .flight-list { padding: 10px 12px 18px; }
+  .flight-row { grid-template-columns: 75px 1fr; padding: 15px; }
+  .flight-meta { grid-column: 2; justify-self: end; }
+  .flight-route { grid-template-columns: 1fr; }
+  .flight-route__line { display: none; }
+  .flight-route__airport:last-child { text-align: left; }
+  .flight-route__airport:last-child::before { content: "to "; color: var(--muted); font-size: 12px; }
+  .flight-event { grid-row: auto; grid-column: 1 / -1; width: 100%; justify-self: stretch; }
+  .board-footer { align-items: start; flex-direction: column; gap: 8px; }
+  .section-heading--split { align-items: start; }
+  .card-controls { display: none; }
+  .destination-options { align-items: stretch; flex-direction: column; }
+  .segmented, .class-select { width: 100%; }
+  .segmented button { min-height: 44px; flex: 1; }
+  .destination-card { min-height: 360px; }
+  .network-card, .network-card > img { height: 480px; min-height: 480px; }
+  .network-search { grid-template-columns: 1fr; border-radius: 18px; }
+  .network-search__swap { display: none; }
+  .network-filters { left: 16px; right: 16px; transform: none; }
+  .newsletter__content { padding: 34px 24px; }
+  .newsletter form { flex-direction: column; }
+  .footer__links { grid-template-columns: 1fr 1fr; }
+  .footer__bottom { flex-direction: column; }
+  .support-button span:last-child { display: none; }
+  .support-button { right: 15px; padding-right: 7px; }
+  .search-dialog, .modal__dialog { padding: 32px 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+}
